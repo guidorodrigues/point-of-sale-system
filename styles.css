@@ -106,6 +106,15 @@ button:hover {
     margin-top: 10px;
 }
 
+#flexbox-imprimir-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#apagar-btn {
+    background-color: red;
+}
+
 @media print {
     body * {
         visibility: hidden;

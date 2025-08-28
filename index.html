@@ -42,7 +42,11 @@
         <div class="section" id="notaFiscal">
             <h2>Nota Fiscal</h2>
             <div id="notaFiscalContent"></div>
-            <button onclick="imprimirNota()" class="imprimir-btn">Imprimir Nota</button>
+            <div id="flexbox-imprimir-buttons">
+                <button onclick="imprimirNota()" class="imprimir-btn">Imprimir Nota</button>
+                <button onclick="apagarNota()" id="apagar-btn" style="display: none;"">Apagar Nota Fiscal</button>
+            </div>
+            <!-- style="display: none; -->
         </div>
     </div>
     <footer>

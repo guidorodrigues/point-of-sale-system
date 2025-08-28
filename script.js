@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     atualizarListaProdutos();
 });
 
+const botaoDeApagarNotaFiscal = document.getElementById('apagar-btn')
+
 // Função para adicionar produto
 function adicionarProduto() {
     const nome = document.getElementById('produtoNome').value;
@@ -152,6 +154,7 @@ function finalizarVenda() {
     const troco = valorPago - total;
     
     // Gerar nota fiscal
+    botaoDeApagarNotaFiscal.style.display = "inline-block"
     const notaContent = document.getElementById('notaFiscalContent');
     notaContent.innerHTML = `
         <h3>Supermercado ABC</h3>
@@ -190,6 +193,12 @@ function finalizarVenda() {
     calcularTotal();
     document.getElementById('valorPago').value = '';
     document.getElementById('troco').textContent = 'Troco: R$ 0.00';
+}
+
+function apagarNota() {
+    const notaContent = document.getElementById('notaFiscalContent');
+    notaContent.innerHTML = "";
+    botaoDeApagarNotaFiscal.style.display = "none"
 }
 
 // Imprime a nota fiscal
