@@ -1,6 +1,8 @@
 # point-of-sale-system
 Um sistema de vendas para produdos fisicos e onlines feito com HTML5, CSS3 e JavaScript 
 
+Page: https://guidorodrigues.github.io/point-of-sale-system/
+
 ## Features
 
 - Manage sales of physical and online products
